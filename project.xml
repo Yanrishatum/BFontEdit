@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<!-- NMML reference: https://gist.github.com/1763850 -->
+	
+	<!-- metadata, make sure 'package' is at least 3 segments (ie. com.mycompany.myproject) -->
+	<meta title="BFontEdit" package="BFontEdit" version="1.0.0" company="Yanrishatum" />
+	
+	<!-- output -->
+	<app main="Main" file="BFontEdit" path="bin" />
+	
+	<window background="#444444" fps="60" />
+	<window width="800" height="600" unless="mobile" />
+	<window orientation="landscape" vsync="false" antialiasing="0" if="cpp" />
+	
+	<!-- classpath, haxe libs -->
+	<source path="src" />
+	<source path="lib" />
+	<haxelib name="openfl" />
+	<haxelib name="actuate" />
+	<haxelib name="minimalcompshx" />
+	<haxelib name="unifill" />
+	<haxelib name="cpp_void" if="cpp" unless="display" />
+	
+  <haxedef name="bfont_save"/>
+  
+	<!-- assets -->
+	<icon path="assets/openfl.svg" />
+	<assets path="assets/img" rename="img" />
+	
+	<!-- optimize output
+	<haxeflag name="-dce full" /> -->
+	
+</project>
