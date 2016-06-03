@@ -17,7 +17,7 @@
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="E:\HaxeToolkit\haxe\lib\openfl\git" />
-    <class path="E:\HaxeToolkit\haxe\lib\lime\lime_origin" />
+    <class path="E:\HaxeToolkit\haxe\lib\lime\2,9,1" />
     <class path="E:\HaxeToolkit\haxe\lib\actuate\1,8,6" />
     <class path="E:\HaxeToolkit\haxe\lib\minimalcompshx\actual" />
     <class path="E:\HaxeToolkit\haxe\lib\unifill\0,4,0" />
