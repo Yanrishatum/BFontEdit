@@ -37,6 +37,21 @@ class BFont
     }
   }
   
+  /**
+   * Extends current BFont with additional glyphs from another BFont file.  
+   * Note: Only glyphs are exported, space size, line height and leading does not overriden.
+   */
+  public function extend(file:String):Void
+  {
+    var json:RawBFontData = Json.parse(file);
+    for (glyph in json.glyphs)
+    {
+      var g:BFontGlyph = new BFontGlyph();
+      g.load(glyph);
+      glyphs.set(g.id, g);
+    }
+  }
+  
   #if bfont_save
   public function save():String
   {
