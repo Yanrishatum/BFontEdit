@@ -52,6 +52,17 @@ class BFont
     }
   }
   
+  /**
+   * Exports glyph data from another BFont instance.
+   */
+  public function export(other:BFont):Void
+  {
+    for (glyph in other.glyphs)
+    {
+      glyphs.set(glyph.id, glyph);
+    }
+  }
+  
   #if bfont_save
   public function save():String
   {
